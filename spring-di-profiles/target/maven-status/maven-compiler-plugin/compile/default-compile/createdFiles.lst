@@ -1,0 +1,7 @@
+org\kamil\config\Appconfig.class
+org\kamil\beans\NameRepository.class
+org\kamil\config\profiles\DevProfile.class
+org\kamil\SpringDiApplication.class
+org\kamil\config\profiles\ProdProfile.class
+org\kamil\config\DatabaseDatasource.class
+org\kamil\config\Appconfig$1.class

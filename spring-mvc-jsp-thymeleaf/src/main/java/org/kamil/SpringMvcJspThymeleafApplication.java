@@ -1,0 +1,13 @@
+package org.kamil;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringMvcJspThymeleafApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringMvcJspThymeleafApplication.class, args);
+	}
+
+}

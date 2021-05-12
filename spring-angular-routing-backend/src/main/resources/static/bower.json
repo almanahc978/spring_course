@@ -1,0 +1,12 @@
+{
+  "name": "angular",
+  "version": "1.8.2",
+  "license": "MIT",
+  "main": "./angular.js",
+  "ignore": [],
+  "dependencies": {
+	"angular": "^1.6.2",
+    "angular-resource": "^1.8.2",
+	"angular-route": "^1.8.12"
+  }
+}

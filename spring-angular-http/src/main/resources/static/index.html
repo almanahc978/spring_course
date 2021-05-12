@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="UTF-8">
+<title>Product manager</title>
+</head>
+<body ng-controller="ProductController as productControl">
+	<h1>{{productControl.appName}}</h1>
+	<form >
+		<input type="text" ng-model="productControl.product.name" placeholder="Name"><br/>
+		<input type="text" ng-model="productControl.product.producer" placeholder="Producer"><br/>
+		<input type="text" ng-model="productControl.product.kcal" placeholder="kcal"><br/>
+		<button ng-click="productControl.addProduct(productControl.product)">Add product</button><br/>
+	</form>
+	
+	<ul>
+		<li ng-repeat="prod in productControl.products" ng-mouseover="productControl.loadData(prod.id)">
+		{{prod.name}} - {{prod.producer}} ({{prod.kcal}} kcal)
+		</li>
+	</ul>
+	
+	<div ng-show="productControl.details">
+		<h2>{{productControl.details.name}}</h2>
+		<p>Producent: {{productControl.details.producer}}, Kcal: {{productControl.details.kcal}}</p>
+	</div>
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="bower_components/angular-resource/angular-resource.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
